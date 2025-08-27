@@ -2,10 +2,10 @@
   "name": "web4-ai-agent",
   "version": "1.0.0",
   "description": "AI agent for the future of internet",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "tsx index.ts",
+    "start": "tsx src/index.ts",
     "clean": "rm -rf build && rm -rf node_modules",
     "build": "tsc && chmod 755 build/index.js"
   },
@@ -23,7 +23,9 @@
   "author": "Jayant Dabas",
   "license": "ISC",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.17.4"
+    "@anthropic-ai/sdk": "^0.60.0",
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "dotenv": "^17.2.1"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
